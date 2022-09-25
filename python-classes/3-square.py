@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Creating an empty class to define a square."""
+
 class Square:
-    """Class that represents a square.
+    """
+    Class that represents a square.
 
     Private Instance Attribute: size.
     Instantiation with optional size.
