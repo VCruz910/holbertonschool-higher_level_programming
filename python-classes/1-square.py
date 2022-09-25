@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Created an empty class that defines our square."""
+
+
 class Square:
     """
     Class that represents a square.
@@ -10,7 +12,7 @@ class Square:
     def __init__(self, size):
         """
         Initializes the data for storing the square's size.
-        
+
         Args:
             param1 (int): Size of the square.
         """
