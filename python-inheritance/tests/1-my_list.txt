@@ -1,0 +1,24 @@
+==============================
+The ''1-my_list'' Module
+==============================
+
+Using ''My List''
+------------------------------
+Import Class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Testing:
+    >>> MyList = MyList()
+
+    >>> my_list
+    []
+
+    >>> my_list.append(5)
+
+    >>> my_list.append(9)
+
+    >>> my_list.append(4)
+
+    >>> my_list
+    [5, 9, 4]
