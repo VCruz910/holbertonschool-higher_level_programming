@@ -11,12 +11,12 @@ class MyList(list):
     Class for organizing
     lists.
 
+    Arguments:
+        - list: Class List
     Attributes:
     ====================
     Public Instance Method:
         - def print_sorted(self):
-    Arguments:
-        - list: Class list.
     """
     def print_sorted(self):
         """
@@ -30,6 +30,6 @@ class MyList(list):
         Raises:
             - None.
         """
-        NList = self[:]
-        NList.sort()
-        print("{}".format(NList))
+        New_List = self[:]
+        New_List.sort()
+        print("{}".format(New_List))
