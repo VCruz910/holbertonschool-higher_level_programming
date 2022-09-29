@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: My List.
+Module: 1-my_list
 Class that inherits
 from 'list'.
 """
@@ -15,6 +15,8 @@ class MyList(list):
     ====================
     Public Instance Method:
         - def print_sorted(self):
+    Arguments:
+        - list: Class list.
     """
     def print_sorted(self):
         """
@@ -30,4 +32,4 @@ class MyList(list):
         """
         NList = self[:]
         NList.sort()
-        print(f"{NList}")
+        print("{}".format(NList))
