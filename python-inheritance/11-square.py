@@ -8,6 +8,7 @@ based on 10-square module.
 """
 
 
+Square = __import__('10-square').Square
 Rectangle = __import__('9-rectangle').Rectangle
 
 
