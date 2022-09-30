@@ -15,15 +15,6 @@ def inherits_from(obj, a_class):
     """
     Checks if the object is an
     instance inherited.
-
-    Arguments:
-        - obj: Object Argument.
-        -a_class: Class Type
-        Argument.
-    Returns:
-        - True or False.
-    Raises:
-        - None.
     """
     if type(obj) is a_class:
         return False
