@@ -22,14 +22,5 @@ class MyList(list):
         """
         Prints our list in
         ascending order.
-
-        Arguments:
-            - None.
-        Returns:
-            - None.
-        Raises:
-            - None.
         """
-        New_List = self[:]
-        New_List.sort()
-        print("{}".format(New_List))
+        print(sorted(self))
