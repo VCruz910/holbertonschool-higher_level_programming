@@ -3,13 +3,7 @@
 
 
 class Student:
-    """Defines a student.
-    Public attributes:
-        - first_name
-        - last_name
-        - age
-    Public method to_json().
-    """
+    """Defines a student."""
 
     def __init__(self, first_name, last_name, age):
         """Initializes the Student instance."""
@@ -19,12 +13,10 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """Retrieves a dictionary representation
-        of a Student instance.
-        Arguments: attrs: Attribute List.
-        Returns: the dict representation of the instance.
-        """
+        """Retrieves a dictionary representation of a Student instance."""
+
          my_dict = dict()
+
         if type(attrs) is list and all(type(x) is str for x in attrs):
             for x in attrs:
                 if x in self.__dict__:
