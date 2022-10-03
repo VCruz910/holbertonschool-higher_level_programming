@@ -4,7 +4,7 @@ Defines a Base Class for the other classes
 in project.
 """
 
-#imports
+# imports for classes
 import json
 import csv
 import os
