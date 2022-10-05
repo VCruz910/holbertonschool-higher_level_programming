@@ -183,7 +183,7 @@ class Rectangle(Base):
         for Ypos in range(0, self.__y):
             print()
         for INT_H in range(0, self.__height):
-            for Xpos in range(0, seldf.__x):
+            for Xpos in range(0, self.__x):
                 print(" ", end="")
             for INT_W in range(0, self.__width):
                 print("#", end="")
