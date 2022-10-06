@@ -130,7 +130,7 @@ class Base:
         elif cls.__name__ == 'Square':
             DumIns = cls(1)
         DumIns.update(**dictionary)
-        return (DumInst)
+        return (DumIns)
 
     @classmethod
     def load_from_file(cls):
