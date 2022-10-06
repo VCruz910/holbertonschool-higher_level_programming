@@ -24,7 +24,7 @@ class Base:
 
     """
     __nb_objects = 0
-# Class Initialization:
+
     def __init__(self, id=None):
         """
         Base Class Initialization.
@@ -85,7 +85,7 @@ class Base:
         if list_objs is None or list_objs == []:
             JStr = "[]"
         else:
-            JStr = cls.to_json_string([Obj.to_dictionary() for Obj in list_objs])
+            JStr = cls.to_json_string([O.to_dictionary() for O in list_objs])
         FileName = cls.__name__ + ".json"
         with open(FileName, 'w') as F:
             F.write(JStr)
