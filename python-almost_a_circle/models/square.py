@@ -39,7 +39,7 @@ class Square(Rectangle):
         of the Square.
         """
         STR = "[Square] ({}) {}/{} - {}".format(
-                self.id, self.x, self.y, self.__width)
+                self.id, self.x, self.y, self.width)
         return (STR)
 
     @property
@@ -47,7 +47,7 @@ class Square(Rectangle):
         """
         Retrieves size attribute.
         """
-        return (self.__width)
+        return (self.width)
 
     @size.setter
     def size(self, value):
@@ -59,8 +59,8 @@ class Square(Rectangle):
             raise TypeError("size must be an integer")
         if value <= 0:
             raise ValueError("size must be > 0")
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """
