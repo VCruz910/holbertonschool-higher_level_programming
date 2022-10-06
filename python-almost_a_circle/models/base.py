@@ -38,7 +38,7 @@ class Base:
                 * If id is not an integer.
         """
         if type(id) != int and id is not None:
-            raise TypeError("ID must be an integer")
+            raise TypeError("id must be an integer")
         if id is not None:
             self.id = id
         else:
