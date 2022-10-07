@@ -252,5 +252,5 @@ class Rectangle(Base):
         of a Rectangle.
         """
         MyDICT = {'id': self.id, 'width': self.__width,
-                'height': self.__height, 'x': self.__x, 'y': self.__y}
+        'height': self.__height, 'x': self.__x, 'y': self.__y}
         return (MyDICT)
