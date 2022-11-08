@@ -4,7 +4,8 @@ Lists all states from
 hbtn_0e_0_usa database.
 """
 
-import sys, MySQLdb
+import sys
+import MySQLdb
 
 if __name__ == '__main__':
     DB = MYSQLdb.connect(USER=sys.argv[1],
