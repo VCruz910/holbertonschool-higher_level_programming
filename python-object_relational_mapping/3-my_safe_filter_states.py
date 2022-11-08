@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-'''
-Lists all states from
-hbtn_0e_0_usa database.
-'''
+"""
+Lists all states from hbtn_0e_0_usa database.
+"""
+
+
 import sys
 import MySQLdb
 
