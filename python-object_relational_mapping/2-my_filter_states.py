@@ -5,10 +5,9 @@ displays all values is state
 table of hbtn_0e_0_usa where
 name matches arguments.
 """
-
-
 import sys
 import MySQLdb
+
 
 if __name__ == '__main__':
     DB = MySQLdb.connect(
