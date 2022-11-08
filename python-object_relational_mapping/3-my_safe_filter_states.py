@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""
+'''
 Lists all states from
 hbtn_0e_0_usa database.
-"""
-
+'''
 import sys
 import MySQLdb
-
 
 if __name__ == '__main__':
     DB = MySQLdb.connect(
