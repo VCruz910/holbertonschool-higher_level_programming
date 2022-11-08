@@ -8,9 +8,9 @@ import sys
 import MySQLdb
 
 if __name__ == '__main__':
-    DB = MYSQLdb.connect(USER=sys.argv[1],
-            PASSWD=sys.argv[2], DB=sys.argv[3],
-            PORT=3306)
+    DB = MYSQLdb.connect(user=sys.argv[1],
+            passwd=sys.argv[2], db=sys.argv[3],
+            port=3306)
     CURSOR = DB.CURSOR()
     CURSOR.execute("SELECT * FROM states;")
     states = CURSOR.fetchall()
