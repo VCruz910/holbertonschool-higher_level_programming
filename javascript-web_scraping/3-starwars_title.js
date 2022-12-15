@@ -1,9 +1,8 @@
 #!/usr/bin/node
 const request = require('request');
-const id = process.argv[2];
-request('https://swapi-api.hbtn.io/api/films/:id' + id + '/', function (error, response, body) {
-  if (error == null) {
-    const json = JSON.parse(body);
-    console.log(json.title);
-  }
+const url = ('https://swapi-api.hbtn.io/api/films/' + process.argv[2]);
+
+request.get(url, (error, res, body) => {
+  if (error) throw error;
+  console.log(JSON.parse(body).title);
 });
