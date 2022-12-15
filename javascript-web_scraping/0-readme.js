@@ -1,9 +1,9 @@
 #!/usr/bin/node
-const FSearch = require('FS');
-FSearch.ReadFile(process.argv[2], 'utf8', function (ERROR, CONTENTS) {
-    if (CONTENTS === undefined) {
-        console.log(ERROR);
+const fs = require('fs');
+fs.readFile(process.argv[2], 'utf8', function (err, contents) {
+    if (contents === undefined) {
+        console.log(err);
     } else {
-        console.log(CONTENTS);
+        console.log(contents);
     }
 });
